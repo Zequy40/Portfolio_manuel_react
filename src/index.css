@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --negro: #393939;
  --tipo-principal: Helvetica, Arial, sans-serif;

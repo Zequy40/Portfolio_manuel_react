@@ -1,6 +1,7 @@
 
 import header from './../estilos/header.module.css';
-import logo from './../assets/react.svg';
+
+import logo from './../../public/manuel.svg';
 
 export const Inicio = () => {
     return (
@@ -9,7 +10,7 @@ export const Inicio = () => {
             <div className="max-md:hidden">
         <div className={header.container}>
           <div className={header.image}>
-            <img  alt='logo manu' src="/manuel.svg">
+            <img  alt='logo manu' src={logo}>
             </img></div>
           <div className={header.line}></div>
 
