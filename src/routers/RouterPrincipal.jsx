@@ -4,6 +4,7 @@ import { Logo } from './../components/Logo';
 import { Contact } from './../components/Contact';
 import { Photography } from './../components/Photography';
 
+
 export const RouterPrincipal = () => {
     return (
         <>
@@ -19,7 +20,9 @@ export const RouterPrincipal = () => {
                             <p>Esta pagina no existe</p>
                         </>
                     )}></Route>
+
                 </Routes>
+               
             </BrowserRouter>
         </>
     )
