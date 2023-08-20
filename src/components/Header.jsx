@@ -23,6 +23,8 @@ export const Header = () => {
       else{
         page = ''
       }
+      console.log(page);
+      
 
   return (
     <>
@@ -49,19 +51,14 @@ export const Header = () => {
           </button>
         <div className={contact.nav}>
           <Link to="/logo" className={
-            ({isActive}) => {
-                return isActive ? 'text-red-700' : ''
+             page==="Logo Design" ? 'text-red-700' : ''
             }
-          }>Logo Design</Link>
+          >Logo Design</Link>
           <Link to="/contact" className={
-            ({isActive}) => {
-                return isActive ? 'text-red-700' : ''
-            }
+            page==="Contact" ? 'text-red-700' : ''
           }>Contact</Link>
           <Link to="/photography" className={
-            ({isActive}) => {
-                return isActive ? 'text-red-700' : ''
-            }
+             page==="Photography" ? 'text-red-700' : ''
           }>Photography</Link>
           </div>
         </div>
