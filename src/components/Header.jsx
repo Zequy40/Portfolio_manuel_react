@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import contact from './../estilos/contact.module.css';
-import { NavLink, useHref } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 export const Header = () => {
     const [menu, setMenu] = useState(false)
     const handleClick = () => {
@@ -30,9 +30,9 @@ export const Header = () => {
 
     <div className={contact.header}>
       <div className="logo">
-        <NavLink to="/">
+        <Link to="/">
           <img  className={contact.logo} alt='' src="/manuel.svg"></img>
-        </NavLink>
+        </Link>
       </div> 
       
       <h1 className={contact.title}>{page}</h1>
@@ -48,21 +48,21 @@ export const Header = () => {
 </svg>
           </button>
         <div className={contact.nav}>
-          <NavLink to="/logo" className={
+          <Link to="/logo" className={
             ({isActive}) => {
                 return isActive ? 'text-red-700' : ''
             }
-          }>Logo Design</NavLink>
-          <NavLink to="/contact" className={
+          }>Logo Design</Link>
+          <Link to="/contact" className={
             ({isActive}) => {
                 return isActive ? 'text-red-700' : ''
             }
-          }>Contact</NavLink>
-          <NavLink to="/photography" className={
+          }>Contact</Link>
+          <Link to="/photography" className={
             ({isActive}) => {
                 return isActive ? 'text-red-700' : ''
             }
-          }>Photography</NavLink>
+          }>Photography</Link>
           </div>
         </div>
  
