@@ -16,7 +16,8 @@ const folder = '/images/'
   .catch(error => {
     console.error('Error al descargar los productos:', error);
   })
- })
+
+}, []);
   return (
     <>
       <Header />

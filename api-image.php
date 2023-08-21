@@ -1,6 +1,6 @@
 <?php 
 header("Access-Control-Allow-Origin: *");
-$sql = "SELECT * FROM fotos "; 
+$sql = "SELECT * FROM fotos"; 
 
 function connectDB(){
 
@@ -24,8 +24,7 @@ function disconnectDB($conexion){
 
     $close = mysqli_close($conexion);
 
-        if($close){
-           // echo 'La desconexion de la base de datos se ha hecho satisfactoriamente';
+        if($close){           // echo 'La desconexion de la base de datos se ha hecho satisfactoriamente';
         }else{
             //echo 'Ha sucedido un error inexperado en la desconexion de la base de datos';
         }   
