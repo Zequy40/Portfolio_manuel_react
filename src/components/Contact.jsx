@@ -2,6 +2,7 @@ import contact from './../estilos/contact.module.css';
 import { Header } from './Header';
 import { FooterMobile } from './../components/FooterMobile';
 import { Footer } from './../components/Footer';
+import { Link } from 'react-router-dom';
 
 export const Contact = () => {
 
@@ -25,11 +26,11 @@ export const Contact = () => {
             </div>
             <div className={contact.containerEmail}>
               <div className={contact.email}>
-                <div className={contact.emailContact}>manuelcdesigner@gmail.com</div>
+                <div className={contact.emailContact}><Link to="mailto:info@manuelcavilla.com">info@manuelcavilla.com</Link></div>
               </div>
 
               <div className={contact.email}>
-                <div className={contact.emailContact}>@manuelcavilla</div>
+                <div className={contact.emailContact}><Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw==">@manuelcavilla</Link></div>
               </div>
 
               <div className={contact.email}>
@@ -52,7 +53,7 @@ export const Contact = () => {
                     <img alt='' src='/images/email.png' />
                     <p>Email</p>
                   </div>
-                  <div className={contact.emailContactMobile}>manuelcdesigner@gmail.com</div>
+                  <div className={contact.emailContactMobile}><Link to="mailto:info@manuelcavilla.com">info@manuelcavilla.com</Link></div>
                 </div>
 
                 <div className={contact.emailMobile}>
@@ -60,7 +61,7 @@ export const Contact = () => {
                     <img alt='' src='/images/insta.png' />
                     <p>Instagram</p>
                   </div>
-                  <div className={contact.emailContactMobile}>@manuelcavilla</div>
+                  <div className={contact.emailContactMobile}><Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw==">@manuelcavilla</Link></div>
                 </div>
 
                 <div className={contact.emailMobile}>
@@ -68,7 +69,7 @@ export const Contact = () => {
                     <img alt='' src='/images/phone.png' />
                     <p>Phone</p>
                   </div>
-                  <div className={contact.emailContactMobile}>+44 7300 203398</div>
+                  <div className={contact.emailContactMobile}><Link to="tel:+44 7300 203398">+44 7300 203398</Link></div>
                 </div>
               </div>
 

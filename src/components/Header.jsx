@@ -23,7 +23,7 @@ export const Header = () => {
       else{
         page = ''
       }
-      console.log(page);
+  
       
 
   return (
