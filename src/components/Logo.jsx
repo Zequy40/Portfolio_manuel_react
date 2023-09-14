@@ -1,10 +1,11 @@
 
-import logo from './../../public/manuel.svg';
+
 import { Header } from './Header';
 import { FooterMobile } from './../components/FooterMobile';
 import { Footer } from './../components/Footer';
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import { LogoMobile } from './LogoMobile';
 
 export const Logo = () => {
  const [product, setProduct] = useState([])
@@ -55,33 +56,10 @@ const folder = '/images/'
         </div>
 
       </div>
-      <div className="w-full  md:hidden">
-        <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-
-          <ul role="list" className="divide-y divide-gray-100">
-
-
-            <li className="flex justify-between  gap-x-1 py-5" >
-
-              <div className="flex flex-col gap-x-4 items-start">
-
-                <img className="h-[150px] w-[150px] flex-none" src={logo} alt="" />
-                <div className="min-w-0 flex-auto items-center">
-                  <p className="mt-1 text-lg italic font-bold leading-5 pb-5  text-black">Bussiness name: <span className="capitalize">name</span></p>
-
-                  <p className="mt-1 text-lg leading-5 text-black">description</p>
-
-                </div>
-              </div>
-
-            </li>
-
-
-          </ul>
-
-        </div>
-
+      <div className="md:hidden">
+        <LogoMobile/>
       </div>
+    
       <div className="max-md:hidden">
         <Footer />
       </div>
