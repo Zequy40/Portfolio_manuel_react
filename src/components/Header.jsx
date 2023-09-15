@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import contact from './../estilos/contact.module.css';
 import { Link, useHref } from 'react-router-dom';
+import axios from 'axios';
 export const Header = () => {
     const [menu, setMenu] = useState(false)
     const handleClick = () => {
@@ -24,6 +25,17 @@ export const Header = () => {
         page = ''
       }
   
+      const [product, setProduct] = useState([])
+      const folder = '/logo/'
+      useEffect(() => {
+          axios.get('https://manuelcavilla.com/apiLogo.php').then(response => {
+              setProduct(response.data)
+          })
+              .catch(error => {
+                  console.error('Error al descargar los productos:', error);
+              })
+  
+      }, []);
       
 
   return (
@@ -31,11 +43,13 @@ export const Header = () => {
     <div className={contact.container} >
 
     <div className={contact.header}>
-      <div className="logo">
+    {product.map(logo => (
+      <div className="logo" key={logo.id}>
         <Link to="/">
-          <img  className={contact.logo} alt='' src="/manuel.svg"></img>
+          <img  className={contact.logo} alt='' src={folder + logo.image}></img>
         </Link>
       </div> 
+      ))}
       
       <h1 className={contact.title}>{page}</h1>
       <button className={contact.btn} onClick={handleClick}>
