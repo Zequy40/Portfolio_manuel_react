@@ -28,7 +28,7 @@ export const LogoMobile = () => {
 
                                 <img className="h-[150px] w-[150px] flex-none" src={folder + products.image} alt="" />
                                 <div className="min-w-0 flex-auto items-center">
-                                    <p className="mt-1 text-lg italic font-bold leading-5 pb-5  text-black">Bussiness name: <span className="capitalize">{products.name}</span></p>
+                                    <p className="mt-1 text-lg italic font-bold leading-5 pb-5  text-black">Business name: <span className="capitalize">{products.name}</span></p>
 
                                     <p className="mt-1 text-lg leading-5 text-black">{products.description}</p>
 
