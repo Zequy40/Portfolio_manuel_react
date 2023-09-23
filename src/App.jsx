@@ -47,7 +47,7 @@ function App() {
             <Link to="/contact"><button className={header.btn2}>Contact</button></Link>
 
 
-            <Link to="/photography"><button className={header.btn3}>Photography
+            <Link to="/menu-photography"><button className={header.btn3}>Photography
               <span className={header.effect}></span></button></Link>
           </div>
 

@@ -1,7 +1,7 @@
 .container{
     margin: auto;
-    max-width: 1440px;
-    max-height: 1024px;
+    max-width: 79.5rem;
+    max-height: 64rem;
     background: #FFF;
     
 }
@@ -15,7 +15,7 @@
     
 }
 .line{
-    max-width: 1212px;
+    max-width: 75.75rem;
     height: 1px;
     flex-shrink: 0;
     background-color: #000;
@@ -24,22 +24,22 @@
 .groupBtn{
     display: flex;
     justify-content: space-around;
-    padding-top: 80px;
-    font-size: 36px;
+    padding-top: 5rem;
+    font-size: 2.25rem;
     
 }
 
 .svg{
     position: absolute;
-    top: -20px;
-    left: -129px;
+    top: -1.25rem;
+    left: -8.0625rem;
     color: #000;
 }
 
 .btn1{
     position: relative;
     z-index: 1;
-    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
 }
 
 .btn1:hover{
@@ -309,13 +309,13 @@ transform-origin: top left;
         width: 100%;
     }
     .imgMobile{
-        min-height: 25px;
+        min-height: 1.5625rem;
         display: flex;
         gap: .5rem;
     }
     
     .imgMobile p{
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #727272;
     }
     .containerEmailMobile{
@@ -340,14 +340,14 @@ box-shadow:  8px 8px 20px #8a8a8a,
              -8px -8px 20px #ffffff;
     }
     .imgLogo{
-        height: 250px;
-        width: 250px;
+        height: 15.625rem;
+        width: 15.625rem;
     }
     .btnMobile{
         position: relative;
         z-index: 1;
-        padding: 20px 20px;
-        font-size: 25px;
+        padding: 1.25rem 1.25rem;
+        font-size: 1.5625rem;
     }
       
   }

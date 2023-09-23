@@ -18,6 +18,9 @@ export const Header = () => {
       else if(location === "/photography"){
         page = "Photography"
       }
+      else if(location === "/menu-photography"){
+        page = "Photography Menu"
+      }
       else if(location === "/contact"){
         page = "Contact"
       }
@@ -71,8 +74,8 @@ export const Header = () => {
           <Link to="/contact" className={
             page==="Contact" ? 'text-red-700' : ''
           }>Contact</Link>
-          <Link to="/photography" className={
-             page==="Photography" ? 'text-red-700' : ''
+          <Link to="/menu-photography" className={
+             page==="Photography" || page==="Photography Menu" ? 'text-red-700' : ''
           }>Photography</Link>
           </div>
         </div>
