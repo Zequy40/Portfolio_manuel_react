@@ -26,7 +26,7 @@ export const MenuPhotography = () => {
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-black origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
                         <div className="py-5">
-                            <Link to="#"><button className="relative disabled:opacity-50" disabled>Street Foto
+                            <Link to="#"><button className="relative disabled:opacity-50" disabled>Street Photo
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-black origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
                     </div>
