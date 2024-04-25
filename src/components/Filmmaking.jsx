@@ -1,8 +1,8 @@
 
 import photo from './../estilos/photo.module.css';
 import { Header } from './Header';
-import { FooterMobile } from './../components/FooterMobile';
-import { Footer } from './../components/Footer';
+import { FooterMobile } from './FooterMobile';
+import { Footer } from './Footer';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import PhotographyMobile from './PhotographyMobile';

@@ -24,6 +24,9 @@ export const Header = () => {
       else if(location === "/contact"){
         page = "Contact"
       }
+      else if(location === "/about"){
+        page = "About me"
+      }
       else{
         page = ''
       }
@@ -67,16 +70,16 @@ export const Header = () => {
 </svg>
           </button>
         <div className={contact.nav}>
-          <Link to="/logo" className={
-             page==="Logo Design" ? 'text-red-700' : ''
-            }
-          >Logo Design</Link>
-          <Link to="/contact" className={
-            page==="Contact" ? 'text-red-700' : ''
-          }>Contact</Link>
           <Link to="/menu-photography" className={
              page==="Photography" || page==="Photography Menu" ? 'text-red-700' : ''
           }>Photography</Link>
+          <Link to="/about" className={
+             page==="About me" ? 'text-red-700' : ''
+            }
+          >About me</Link>
+          <Link to="/filmmaking" className={
+            page==="Filmmaking" ? 'text-red-700' : ''
+          }>Filmmaking</Link>
           </div>
         </div>
  

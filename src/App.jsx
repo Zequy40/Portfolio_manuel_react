@@ -35,7 +35,9 @@ function App() {
           <div className={header.line}></div>
 
           <div className={header.groupBtn}>
-            <Link to="/logo"><button className={header.btn1}>Logo Design
+            <Link to="/menu-photography"><button className={header.btn3}>Photography
+              <span className={header.effect}></span></button></Link>
+            <Link to="/about"><button className={header.btn1}>About me
 
               <span></span>
               <span></span>
@@ -44,11 +46,9 @@ function App() {
             </button></Link>
 
 
-            <Link to="/contact"><button className={header.btn2}>Contact</button></Link>
+            <Link to="/filmmaking"><button className={header.btn2}>Filmmaking</button></Link>
 
 
-            <Link to="/menu-photography"><button className={header.btn3}>Photography
-              <span className={header.effect}></span></button></Link>
           </div>
 
         </div>

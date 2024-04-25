@@ -33,8 +33,11 @@ export const Inicio = () => {
           <div className={header.line}></div>
 
           <div className={header.groupBtn}>
-            <a href="/logo"><button className={header.btn1}>Logo Design
+            <a href="/photography"><button className={header.btn3}>Photography
+              <span className={header.effect}></span></button></a>
 
+            <a href="/about">
+            <button className={header.btn1}>About me
               <span></span>
               <span></span>
               <span></span>
@@ -42,11 +45,9 @@ export const Inicio = () => {
             </button></a>
 
 
-            <a href="/contact"><button className={header.btn2}>Contact</button></a>
+            <a href="/contact"><button className={header.btn2}>Filmmaking</button></a>
 
 
-            <a href="/photography"><button className={header.btn3}>Photography
-              <span className={header.effect}></span></button></a>
           </div>
 
         </div>
