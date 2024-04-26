@@ -6,6 +6,7 @@ import  {Logo} from './components/Logo';
 import  {Contact} from './components/Contact';
 import  {MenuPhotography} from './components/MenuPhotography';
 import  {Photography} from './components/Photography';
+import  {Commercial} from './components/Commercial';
 import  {About} from './components/About';
 import './index.css'
 
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path='/contact' element={<Contact />}/>
                     <Route path='/menu-photography' element={<MenuPhotography />}/>
                     <Route path='/photography' element={<Photography />}/>
+                    <Route path='/commercial' element={<Commercial />}/>
                     <Route path='/about' element={<About />}/>
                     <Route path='/logo' element={<Logo />}/>
                     <Route path='*' element={(

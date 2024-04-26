@@ -19,18 +19,18 @@ export const MenuPhotography = () => {
 
             <div className="max-w-[1212px]  m-auto py-5">
                     <div className="w-full py-5 my-10 flex flex-col items-center justify-center text-3xl">
-                        <div className="py-5 transition-all relative w-full max-h-[215px]">
-                        <img src={street} alt="" className="relative"/>
-                            <Link to="/photography"><button className="absolute group left-1/2 top-1/2 translate-x-[-50%] translate-y-2/4 text-white">Photography
+                        <div className="transition-all relative w-full max-h-[215px]">
+                        <img src={photo} alt="" className="relative"/>
+                            <Link to="/commercial"><button className="absolute group left-1/2 top-1/2 translate-x-[-50%] translate-y-2/4 text-white">Commercial
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
                         
-                        <div className="py-5 relative w-full max-h-[215px]">
-                        <img src={photo} alt="" className="relative"/>absolute
-                            <Link to="#"><button className="absolute group left-1/2 top-1/2 translate-y-2/4 translate-x-[-50%] text-white">Street photography
+                        <div className="relative w-full max-h-[215px]">
+                        <img src={street} alt="" className="relative"/>absolute
+                            <Link to="/photography"><button className="absolute group left-1/2 top-1/4 translate-y-2/4 translate-x-[-50%] text-white">Street <br></br>photography
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
-                        <div className="py-5 relative w-full max-h-[215px]">
+                        <div className="relative w-full max-h-[215px]">
                         <img src={wedding} alt="" className="relative grayscale"/>
                             <Link to="#"><button className="absolute group left-1/2 top-1/2 translate-y-2/4 translate-x-[-50%] text-white bg-neutral-800" disabled>Wedding
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>

@@ -27,6 +27,9 @@ export const Header = () => {
       else if(location === "/about"){
         page = "About me"
       }
+      else if(location === "/commercial"){
+        page = "Commercial"
+      }
       else{
         page = ''
       }
