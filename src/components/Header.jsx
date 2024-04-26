@@ -19,7 +19,7 @@ export const Header = () => {
         page = "Photography"
       }
       else if(location === "/menu-photography"){
-        page = "Photography Menu"
+        page = "Photography"
       }
       else if(location === "/contact"){
         page = "Contact"

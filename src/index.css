@@ -6,7 +6,10 @@
   --negro: #393939;
  --tipo-principal: Helvetica, Arial, sans-serif;
  --tipo-secundaria: Verdana;
- }
+}
+@font-face { font-family: 'PollerOne'; src: url('../fonts/PollerOne.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrainsMono'; src: url('../fonts/JetBrainsMono.woff2') format('woff2'); }
+
  @media (prefers-color-scheme: dark) {
  :root {
  --negro: #ececec;
