@@ -24,15 +24,15 @@ export const MenuPhotography = () => {
                             <Link to="/commercial"><button className={`absolute group left-1/2 top-1/2 translate-x-[-50%] translate-y-2/4 text-white text-3xl ${photography.font}`}>Commercial
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
-                        
                         <div className="relative w-full max-h-[215px]">
-                        <img src={street} alt="" className="relative"/>absolute
-                            <Link to="/photography"><button className={`absolute group left-1/2 top-1/4 translate-y-2/4 translate-x-[-50%] text-white text-3xl ${photography.font}`}>Street <br></br>photography
+                        <img src={wedding} alt="" className="relative"/>
+                            <Link to="#"><button className={`absolute group left-1/2 top-1/2 translate-y-2/4 translate-x-[-50%] text-white text-3xl bg-neutral-800 ${photography.font}`}>Wedding
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
+                        
                         <div className="relative w-full max-h-[215px]">
-                        <img src={wedding} alt="" className="relative grayscale"/>
-                            <Link to="#"><button className={`absolute group left-1/2 top-1/2 translate-y-2/4 translate-x-[-50%] text-white text-3xl bg-neutral-800 ${photography.font}`}>Wedding
+                        <img src={street} alt="" className="relative"/>
+                            <Link to="/photography"><button className={`absolute group left-1/2 top-1/4 translate-y-2/4 translate-x-[-50%] text-white text-3xl ${photography.font}`}>Street <br></br>photography
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
                     </div>
