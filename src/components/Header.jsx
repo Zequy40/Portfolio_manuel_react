@@ -30,6 +30,9 @@ export const Header = () => {
       else if(location === "/commercial"){
         page = "Commercial"
       }
+      else if(location === "/wedding"){
+        page = "Wedding"
+      }
       else{
         page = ''
       }
@@ -49,7 +52,7 @@ export const Header = () => {
 
   return (
     <>
-    <div className={contact.container} >
+    <div className={`${contact.container} ${contact.whiteColor}`} >
 
     <div className={contact.header}>
     {product.map(logo => (
