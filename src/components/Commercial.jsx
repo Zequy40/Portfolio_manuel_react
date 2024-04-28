@@ -45,9 +45,9 @@ export const Commercial = () => {
                     <p className={`uppercase text-center text-4xl font-bold ${photography.font}`}>FILL OUT OUR FORM TO GET STARTED</p>
                     <p className={`text-4xl px-12 ${photography.font} ${photography.clase}`}>Help us get to know more about you and your business, please give as much information as possible and we can get back to you with a bespoke quote</p>
                 </div>
+            </div>
                 <Forms />
                 <CanYou />
-            </div>
 
 
 

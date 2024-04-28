@@ -8,7 +8,11 @@ export const Forms = () => {
                     <h2 className={`${photography.font2} text-white text-4xl text-center pb-12`}>Contact Form</h2>
                     <div className={photography.loginBox}>
 
-                        <form>
+                        <form className='px-[30%] pt-32 pb-20'>
+                        <div className={photography.userBox}>
+                                
+                                <h2>Contact us for your project</h2>
+                            </div>
                             <div className={photography.userBox}>
                                 <input type="text" name="" required />
                                 <label>Your name or company’s name*</label>

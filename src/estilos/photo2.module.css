@@ -15,71 +15,12 @@
   .clase {
     word-wrap: break-word;
 }
-  
-  .gallery{
-      position: relative;
-      display: flex;
-      gap: 1.875rem;
-      width: 100%;
-      padding-bottom: 1rem;
-    }
-    
-    .gallery img{
-      
-      object-fit: cover;
-      display: block;
-    }
-  
-    
-    .container-file img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .columnMedio{
-      width: 50%;
-    }
-    
-    .large{
-      width: 100%;
-      max-width: 36.875rem;
-      object-fit: cover;
-    }
-    
-  .small{
-      width: 100%;
-      max-width: 287px;
-      
-      object-fit: cover;
-    }
-    
-    .normal{
-      width: 100%;
-      max-width: 590px;
-      display: flex;
-      gap: 1rem;
-      object-fit: cover;
-    }
-    
-    
-    .fileTercio{
-      width: 33.33%;
-    }
-    
-    .container-file-2-3{
-      width: 66.66%;
-    }
-    
-    .file{
-      display: flex;
-    
-    }
     .loginBox {
       position: relative;
       display: flex;
       justify-content: center;
-      margin:0 30% 0 30%;
-      background: rgba(255, 255, 255, 0.987);
+      margin:0 0% 0 0%;
+      background: rgba(0, 0, 0, 0.987);
       padding: 8rem 0 8rem 0;
       
     }
@@ -91,10 +32,10 @@
       width: 100%;
       padding: 10px 0;
       font-size: 36px;
-      color: #000000;
+      color: #ffffff;
       margin-bottom: 30px;
       border: none;
-      border-bottom: 1px solid #000000;
+      border-bottom: 1px solid #ffffff;
       outline: none;
       background: transparent;
     }
@@ -105,7 +46,7 @@
       left: 0;
       padding: 10px 0;
       font-size: 26px;
-      color: #000000;
+      color: #ffffff;
       pointer-events: none;
       transition: .5s;
     }
@@ -116,7 +57,7 @@
       left: 0;
       padding: 10px 0;
       font-size: 26px;
-      color: #000000;
+      color: #ffffff;
       pointer-events: none;
       transition: .5s;
     }
@@ -132,7 +73,7 @@
       position: relative;
       display: inline-block;
       padding: 10px 20px;
-      color: #000000;
+      color: #ffffff;
       font-size: 26px;
       text-decoration: none;
       text-transform: uppercase;
@@ -144,7 +85,7 @@
     
     .loginBox a:hover {
       background: #03f40f;
-      color: #000000;
+      color: #ffffff;
       border-radius: 5px;
       
     }
