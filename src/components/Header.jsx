@@ -33,6 +33,9 @@ export const Header = () => {
       else if(location === "/wedding"){
         page = "Wedding"
       }
+      else if(location === "/photography-wedding"){
+        page = "Photography Wedding"
+      }
       else{
         page = ''
       }

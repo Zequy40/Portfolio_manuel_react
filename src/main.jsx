@@ -9,6 +9,7 @@ import  {Photography} from './components/Photography';
 import  {Commercial} from './components/Commercial';
 import  {About} from './components/About';
 import  {Wedding} from './components/Wedding';
+import  {PhotographyWedding} from './components/PhotographyWedding';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path='/wedding' element={<Wedding />}/>
                     <Route path='/about' element={<About />}/>
                     <Route path='/logo' element={<Logo />}/>
+                    <Route path='/photography-wedding' element={<PhotographyWedding />}/>
                     <Route path='*' element={(
                         <>
                             <h1>404</h1>

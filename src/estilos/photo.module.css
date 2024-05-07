@@ -40,6 +40,10 @@
       width: 50%;
     }
     
+    .largeB{
+      width: 100%;
+      object-fit: cover;
+    }
     .large{
       width: 100%;
       max-width: 36.875rem;
@@ -48,14 +52,14 @@
     
   .small{
       width: 100%;
-      max-width: 287px;
+      max-width: 17.9375rem;
       
       object-fit: cover;
     }
     
     .normal{
       width: 100%;
-      max-width: 590px;
+      max-width: 36.875rem;
       display: flex;
       gap: 1rem;
       object-fit: cover;
@@ -185,7 +189,14 @@
       background: linear-gradient(90deg, transparent, #03f40f);
       animation: btn-anim1 2s linear infinite;
     }
-  
+.responsivePhoto{
+    display: grid;
+    gap: .5rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
     @media screen and (max-width:640px) {
     .containerMobile{
       width: 100vw;
