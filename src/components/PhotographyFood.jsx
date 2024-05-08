@@ -13,13 +13,13 @@ import { useEffect, useState } from 'react';
 // import img6 from './../../public/images/img-07521.png';
 
 
-export const PhotographyWedding = () => {
+export const PhotographyFood = () => {
 
   const [product, setProduct] = useState([])
   // const folder = '/_admin/assets/images/fotos/'
   const folder = '/images/'
   useEffect(() => {
-    axios.get('https://manuelcavilla.com/apiPhotos.php').then(response => {
+    axios.get('https://manuelcavilla.com/apiPhotos2.php').then(response => {
       setProduct(response.data)
     })
       .catch(error => {

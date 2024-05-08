@@ -190,13 +190,20 @@
       animation: btn-anim1 2s linear infinite;
     }
 .responsivePhoto{
-    display: grid;
-    gap: .5rem;
-    grid-auto-flow: dense;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    position: relative;
+    column-count: 1;
 }
+.gridItem{
+    margin: 0;
+    margin-bottom: 0.625rem;
+} 
+.photoItem{
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+
     @media screen and (max-width:640px) {
     .containerMobile{
       width: 100vw;
@@ -218,5 +225,28 @@
       object-fit: cover;
       padding: 1.2rem 0 1.2rem 0;
     }
+   
+    
     
     }
+    @media screen and (min-width: 768px) {
+      .responsiveFooterMobile{
+        display: none;
+        width: 100%;
+      }
+      .responsivePhoto {
+        column-count: 2;
+      }
+    }
+    @media screen and (min-width: 1080px) {
+      
+      .responsivePhoto {
+        column-count: 3;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      
+      .responsiveFooter{
+        display: none;
+      }
+  }

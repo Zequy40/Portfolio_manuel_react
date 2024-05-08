@@ -55,8 +55,8 @@ export const Wedding = () => {
                             <p className='text-2xl py-6 text-start' >UNLIMITED CONSULTATION OVER ZOOM</p>
                             <p className='text-2xl py-6 text-start' >STARTING AT £750</p></div>
                     </div>
-                    <div className='p-24 flex justify-center items-center w-full'>
-                    <Link to="/photography-wedding"><button className={` text-white bg-black text-3xl p-4 ${photography.font}`}>View Gallery</button></Link>
+                    <div className='p-24 flex justify-center items-center w-full transition-all duration-700'>
+                    <Link to="/photography-wedding"><button className={` text-white bg-black text-3xl p-4 hover:text-black hover:bg-white hover:border hover:border-solid hover:border-black ${photography.font}`}>View Gallery</button></Link>
                     </div>
                 </div>
                 <div className="relative ">

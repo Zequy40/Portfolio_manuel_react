@@ -27,6 +27,9 @@ export const Header = () => {
       else if(location === "/about"){
         page = "About me"
       }
+      else if(location === "/filmmaking"){
+        page = "Filmmaking"
+      }
       else if(location === "/commercial"){
         page = "Commercial"
       }
@@ -35,6 +38,18 @@ export const Header = () => {
       }
       else if(location === "/photography-wedding"){
         page = "Photography Wedding"
+      }
+      else if(location === "/photography-food"){
+        page = "Food Photography"
+      }
+      else if(location === "/photography-portrait"){
+        page = "Portrait"
+      }
+      else if(location === "/photography-event"){
+        page = "Event"
+      }
+      else if(location === "/photography-street"){
+        page = "Street Photography"
       }
       else{
         page = ''

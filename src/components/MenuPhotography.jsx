@@ -32,7 +32,7 @@ export const MenuPhotography = () => {
                         
                         <div className="relative w-full max-h-[215px]">
                         <img src={street} alt="" className="relative"/>
-                            <Link to="/photography"><button className={`absolute group left-1/2 top-1/4 translate-y-2/4 translate-x-[-50%] text-white text-3xl ${photography.font}`}>Street <br></br>photography
+                            <Link to="/photography-street"><button className={`absolute group left-1/2 top-1/4 translate-y-2/4 translate-x-[-50%] text-white text-3xl ${photography.font}`}>Street <br></br>photography
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
                     </div>
