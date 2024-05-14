@@ -26,7 +26,8 @@ export const Inicio = () => {
         <div className={header.container}>
           {product.map(logo => (
             <div className={header.image} key={logo.id}>
-              <img alt='logo manu' src={folder + logo.image}>
+              
+              <img alt='logo manu' src={folder + logo.image2}>
               </img></div>
 
           ))}

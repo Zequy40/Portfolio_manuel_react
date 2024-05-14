@@ -5,14 +5,44 @@
     background: #FFF;
     
 }
-.image{
-    max-width: 21.875rem;
-    margin: auto;
-    flex-shrink: 0;
+.containerMain{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
+}
+
+.imageContainer {
+    width: 100%;
+    height: 18.75rem; /* Establece un tamaño predefinido */
+    position: relative;
+    overflow: hidden;
+  }
+  
+.image{
+    max-width: 21.875rem;
+    margin: 0 auto 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.halfImage {
+    transform: translateX(0%) ;
+   transition:transform 1s ease-in-out; 
+}
+.leftHalf{
+    transform:translateX(-100%);
+    
+}
+
+.rightHalf{
+    transform:translateX(100%);
+  
 }
 .line{
     max-width: 75.75rem;
