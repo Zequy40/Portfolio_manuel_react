@@ -69,7 +69,7 @@
       font-size: 16px;
     }
     
-    .loginBox form a {
+    .loginBox form button {
       position: relative;
       display: inline-block;
       padding: 10px 20px;
@@ -83,14 +83,14 @@
       letter-spacing: 4px
     }
     
-    .loginBox a:hover {
+    .loginBox button:hover {
       background: #03f40f;
       color: #ffffff;
       border-radius: 5px;
       
     }
     
-    .loginBox a span {
+    .loginBox button span {
       position: absolute;
       display: block;
     }

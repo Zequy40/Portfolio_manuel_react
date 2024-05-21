@@ -25,7 +25,7 @@ export default function InicioAppMobile() {
           <div className={header.contactMailMobile}>
           {product.map(logo=>(
             <div className={header.contactBackMobile} key={logo.id}>
-            <img alt='logo manu' className={header.imgLogo} src={folder + logo.image}></img>
+            <img alt='logo manu' className={header.imgLogo} src={folder + logo.imageMobile}></img>
             </div>
             ))}
               <div className={header.containerImgMobile}>

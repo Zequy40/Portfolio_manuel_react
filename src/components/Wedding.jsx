@@ -9,8 +9,10 @@ import Find from './CanYouWhite';
 import photo from '/public/images/weddingPort.webp';
 
 
+
 export const Wedding = () => {
 
+    
 
     return (
         <>

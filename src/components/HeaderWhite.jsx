@@ -58,7 +58,7 @@ export const HeaderWhite = () => {
     {product.map(logo => (
       <div className="logo" key={logo.id}>
         <Link to="/">
-          <img  className={contact.logo} alt='' src={folder + logo.image}></img>
+          <img  className={contact.logo} alt='' src={folder + logo.imageMobile}></img>
         </Link>
       </div> 
       ))}
