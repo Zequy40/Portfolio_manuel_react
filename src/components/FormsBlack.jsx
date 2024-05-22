@@ -7,7 +7,7 @@ export const FormsBlack = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_g3bq6ip', 'template_bmjle1f', refForm.current, 'Z1cC4AfvrlRj0Rjii')
+        emailjs.sendForm('service_z9tprsu', 'template_9y2uz6j', refForm.current, 'FaMieKsAbg1NPbt9j')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

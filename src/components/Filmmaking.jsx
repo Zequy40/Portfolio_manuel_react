@@ -6,6 +6,7 @@ import { Footer } from './Footer';
 //import axios from 'axios';
 //import { useEffect, useState } from 'react';
 import PhotographyMobile from './PhotographyMobile';
+import { Forms } from './Forms';
 // import img1 from './../../public/images/img-00361.png';
 // import img2 from './../../public/images/img-01331.png';
 // import img3 from './../../public/images/img-02361.png';
@@ -47,7 +48,7 @@ export const Filmmaking = () => {
                         <div className="max-h-[36.25rem] h-96 w-full bg-black rounded-3xl"></div>
                     </div>
                 </div>
-
+<Forms />
             </div>
             <div className="md:hidden">
                 <PhotographyMobile />

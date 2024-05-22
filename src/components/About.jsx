@@ -4,6 +4,7 @@ import { FooterMobile } from './FooterMobile';
 import { Footer } from './Footer';
 import { Link } from 'react-router-dom';
 import img1 from './../../public/images/portada_manuel.webp';
+import { Forms } from './Forms';
 
 export const About = () => {
 
@@ -62,6 +63,7 @@ export const About = () => {
            </div>
           </div>
         </div>
+        <Forms />
       </div>
 
       <div className="max-md:hidden">

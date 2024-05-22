@@ -5,6 +5,7 @@ import { FooterMobile } from './FooterMobile';
 import { Footer } from './Footer';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Forms } from './Forms';
 // import img1 from './../../public/images/img-00361.png';
 // import img2 from './../../public/images/img-01331.png';
 // import img3 from './../../public/images/img-02361.png';
@@ -72,6 +73,7 @@ export const PhotographyFood = () => {
         )}
 
         </div>
+        <Forms />
      
 
       <div className={photo.responsiveFooter}>
