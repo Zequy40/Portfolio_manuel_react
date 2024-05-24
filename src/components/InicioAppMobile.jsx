@@ -22,29 +22,27 @@ export default function InicioAppMobile() {
     <>
         <div className="w-full">
         <div className={header.containerMobile}>
-          <div className={header.contactMailMobile}>
+          <div className={header.imageContainerBlack}>
           {product.map(logo=>(
-            <div className={header.contactBackMobile} key={logo.id}>
-            <img alt='logo manu' className={header.imgLogo} src={folder + logo.imageMobile}></img>
-            </div>
-            ))}
-              <div className={header.containerImgMobile}>
-                <div className={header.emailMobile}>
-                <Link to="/logo"><button className={header.btnMobile}>Logo Design</button></Link>
-                </div>
-
-                <div className={header.emailMobile}>
-                  
-                <Link to="/contact"><button className={header.btnMobile}>Contact</button></Link>
-                </div>
-
-                <div className={header.emailMobile}>
-                  
-                <Link to="/photography"><button className={header.btnMobile}>Photography</button></Link>
-                </div>
+            <div key={logo.id}>
+              <div className={header.contactBackMobile}>
+                <img alt='logo manu' className={header.imgLogo} src={folder + logo.imageMobileW}></img>
               </div>
-
             
+              <div className={header.containerImgMobile}>
+               
+                  <div className="relative w-full"> <img src={folder + logo.backMobile} alt="" className="max-h-24 w-full"/>
+                  <Link to="/commercial"><button className={`absolute left-1/2 top-0 translate-x-[-50%] translate-y-2/3 text-white text-3xl`}>{logo.descriptionBackMobile}</button></Link></div>
+                
+                  <div className="relative w-full"> <img src={folder + logo.backMobile2} alt="" className="max-h-24 w-full"/>
+                  <Link to="/commercial"><button className={`absolute left-1/2 top-0 translate-x-[-50%] translate-y-2/3 text-white text-3xl`}>{logo.descriptionBackMobile2}</button></Link></div>
+                
+                  <div className="relative w-full"> <img src={folder + logo.backMobile3} alt="" className="max-h-24 w-full"/>
+                  <Link to="/commercial"><button className={`absolute left-1/2 top-0 translate-x-[-50%] translate-y-2/3 text-white text-3xl`}>{logo.descriptionBackMobile3}</button></Link></div>
+                
+              </div>
+            </div>
+          ))}
           </div>
         </div>
       </div>
