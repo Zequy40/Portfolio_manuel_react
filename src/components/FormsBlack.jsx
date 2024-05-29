@@ -17,7 +17,7 @@ export const FormsBlack = () => {
     }
     return (
         <>
-            <div className='mt-28 relative py-14' >
+            <div className='mt-28 relative md:py-14 py-2' >
                 <h2 className={`${photographybis.font2} text-black text-4xl text-center py-12`}>Contact Form</h2>
                 <div className={`${photographybis.loginBox} bg-slate-950`}>
 

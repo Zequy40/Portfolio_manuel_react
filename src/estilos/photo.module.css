@@ -82,7 +82,7 @@
       position: relative;
       display: flex;
       justify-content: center;
-      margin:0 30% 0 30%;
+      margin:0 10% 0 10%;
       background: rgba(255, 255, 255, 0.987);
       padding: 8rem 0 8rem 0;
       
@@ -94,9 +94,9 @@
     .loginBox .userBox input {
       width: 100%;
       padding: 10px 0;
-      font-size: 36px;
+      font-size: 1.875rem;
       color: #000000;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       border: none;
       border-bottom: 1px solid #000000;
       outline: none;
@@ -108,7 +108,7 @@
       top: 0;
       left: 0;
       padding: 10px 0;
-      font-size: 26px;
+      font-size: 1.125rem;
       color: #000000;
       pointer-events: none;
       transition: .5s;
@@ -275,6 +275,15 @@
       }
       .responsivePhoto {
         column-count: 2;
+      }
+      .loginBox {
+        margin:0 30% 0 30%;
+      }
+      .loginBox .userBox input {
+        font-size: 2.25rem;
+      }
+      .loginBox .userBox label {
+        font-size: 1.625rem;
       }
     }
     @media screen and (min-width: 1080px) {

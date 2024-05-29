@@ -17,7 +17,7 @@ export const Forms = () => {
     }
     return (
         <>
-            <div className='bg-stone-950 mt-28 relative py-14' >
+            <div className='bg-stone-950 mt-28 relative md:py-14 py-2' >
                     <h2 className={`${photography.font2} text-white text-4xl text-center pb-12`}>Contact Form</h2>
                     <div className={photography.loginBox}>
 
