@@ -14,7 +14,7 @@ export const MenuPhotographyMobile = () => {
         <>
             
 
-            <div className="max-w-[1212px]  m-auto py-5">
+            <div className="max-w-[1212px]  m-auto py-5 md:hidden" >
                     <div className="w-full py-5 my-10 flex flex-col items-center justify-center text-3xl">
                         <div className="transition-all relative w-full max-h-[215px]">
                         <img src={photo} alt="" className="relative py-4"/>
