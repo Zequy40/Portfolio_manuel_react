@@ -17,8 +17,8 @@ import { FormsBlack } from './FormsBlack';
 export const PhotographyWedding = () => {
 
   const [product, setProduct] = useState([])
-  // const folder = '/_admin/assets/images/fotos/'
-  const folder = '/images/'
+   const folder = '/_admin/assets/images/fotos/'
+  //const folder = '/images/'
   useEffect(() => {
     axios.get('https://manuelcavilla.com/apiPhotos.php').then(response => {
       setProduct(response.data)

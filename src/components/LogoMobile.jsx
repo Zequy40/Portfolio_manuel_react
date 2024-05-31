@@ -4,7 +4,8 @@ import axios from 'axios'
 
 export const LogoMobile = () => {
     const [product, setProduct] = useState([])
-    const folder = '/images/'
+    const folder = '/_admin/assets/images/fotos/'
+    // const folder = '/images/'
     useEffect(() => {
         axios.get('https://manuelcavilla.com/api.php').then(response => {
             setProduct(response.data)

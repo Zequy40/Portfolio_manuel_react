@@ -16,8 +16,8 @@ import { useEffect, useState } from 'react';
 export const PhotographyStreet = () => {
 
   const [product, setProduct] = useState([])
-  // const folder = '/_admin/assets/images/fotos/'
-  const folder = '/images/'
+  const folder = '/_admin/assets/images/fotos/'
+  // const folder = '/images/'
   useEffect(() => {
     axios.get('https://manuelcavilla.com/apiPhotos5.php').then(response => {
       setProduct(response.data)

@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 export default function PhotographyMobile() {
 
     const [product, setProduct] = useState([])
-    const folder = '/images/'
+    const folder = '/_admin/assets/images/fotos/'
+    // const folder = '/images/'
     useEffect(() => {
       axios.get('https://manuelcavilla.com/api-image.php').then(response => {
         setProduct(response.data)

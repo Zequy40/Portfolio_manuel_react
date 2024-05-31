@@ -19,8 +19,8 @@ export const PhotographyFood = () => {
   const [product, setProduct] = useState([])
   const [lightboxImg, setLightboxImg] = useState('');
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  // const folder = '/_admin/assets/images/fotos/'
-  const folder = '/images/'
+   const folder = '/_admin/assets/images/fotos/'
+  //const folder = '/images/'
   useEffect(() => {
     axios.get('https://manuelcavilla.com/apiPhotos2.php').then(response => {
       setProduct(response.data)

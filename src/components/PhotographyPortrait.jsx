@@ -17,8 +17,8 @@ import { Forms } from './Forms';
 export const PhotographyPortrait = () => {
 
   const [product, setProduct] = useState([])
-  // const folder = '/_admin/assets/images/fotos/'
-  const folder = '/images/'
+  const folder = '/_admin/assets/images/fotos/'
+   //const folder = '/images/'
   useEffect(() => {
     axios.get('https://manuelcavilla.com/apiPhotos3.php').then(response => {
       setProduct(response.data)
