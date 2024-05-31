@@ -390,5 +390,8 @@ box-shadow:  8px 8px 20px #8a8a8a,
         padding: 1.25rem 1.25rem;
         font-size: 1.5625rem;
     }
+    .font{
+        font-family: 'JetBrainsMono', sans-serif;
+      }
       
   }
