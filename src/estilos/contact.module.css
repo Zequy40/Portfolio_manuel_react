@@ -176,6 +176,9 @@ gap: 3rem;
     .title{
        display: none;
     }
+    .titleW{
+        display: none;
+     }
     .btn{
         display: none;
     }

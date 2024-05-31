@@ -21,7 +21,7 @@ export const FormsBlack = () => {
                 <h2 className={`${photographybis.font2} text-black text-4xl text-center py-12`}>Contact Form</h2>
                 <div className={`${photographybis.loginBox} bg-slate-950`}>
 
-                    <form className='px-[30%] pt-32 pb-20' onSubmit={sendEmail} ref={refForm}>
+                    <form className='md:px-[30%] px-[15%] pt-32 md:pb-20 pb-0' onSubmit={sendEmail} ref={refForm}>
                         <div className={photographybis.userBox}>
 
                             <h2>Contact us for your special occasion</h2>

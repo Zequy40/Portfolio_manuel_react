@@ -39,13 +39,16 @@
 
     max-width: 300px;
 }
-
+.imgPhoto{
+    max-width: 200px;
+    padding: 1rem;
+}
 
 .containerImg{
 display: flex;
-flex-direction: column;
-gap: 0rem;
-padding: 2.5rem 12rem 2.5rem 12rem ;
+flex-direction: row;
+gap: 1rem;
+padding: 0 ;
 
 }
 
@@ -64,9 +67,9 @@ padding: 2.5rem 12rem 2.5rem 12rem ;
 }
 .p1{
     font-family: 'JetBrainsMono', monospace;
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     color: #000000;
-    line-height: 2.4375rem;
+    line-height: 1.5625rem;
     
 }
 .p1P{
@@ -76,7 +79,7 @@ padding: 2.5rem 12rem 2.5rem 12rem ;
     padding-top: 2rem;
 }
 .p1L{
-    line-height: 40px;
+    line-height: 1.5625rem;
 }
 .menu{
     width: 100%;
@@ -154,12 +157,12 @@ padding: 2.5rem 12rem 2.5rem 12rem ;
 
 }
 .iconBlocH1{
-    font-size: 90px;
+    font-size: 3.75rem;
     font-weight: 400;
-    line-height: 108px;
+    line-height: 4.375rem;
     font-family: "PollerOne", serif;
     text-align: center;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.3rem;
 }
 .iconInd{
     width: 100%;
@@ -278,5 +281,33 @@ padding: 2.5rem 12rem 2.5rem 12rem ;
         letter-spacing: 2px;
     }
 }
-
+@media screen and (min-width: 768px) {
+.title{
+    font-size: 4rem;
+    line-height: 4.75rem;  
+}
+.containerImg{
+flex-direction: column;
+gap: 0rem;
+padding: 2.5rem 12rem 2.5rem 12rem ;
+    }
+    .imgPhoto{
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .p1{
+        
+        font-size: 1.875rem;
+       line-height: 2.4375rem;
+        
+    }
+    .p1L{
+        line-height: 40px;
+    }
+    .iconBlocH1{
+        font-size: 90px;
+        line-height: 108px;
+        letter-spacing: 0.6rem;
+    }
+}
 

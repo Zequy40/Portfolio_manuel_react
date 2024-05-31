@@ -32,7 +32,7 @@ export const Filmmaking = () => {
     return (
         <>
             <Header />
-            <div className="max-md:hidden">
+            
 
                 <div className="max-w-[1212px]  m-auto py-5 mb-10">
 
@@ -42,7 +42,7 @@ export const Filmmaking = () => {
                         <div className="max-h-[36.25rem] h-96 w-full bg-black rounded-3xl"></div>
                     </div> */}
 
-                    <div className="relative w-full max-h-[28.6875rem] pb-16 pt-40 mb-24">
+                    <div className="relative w-full max-h-[28.6875rem] pb-16 md:pt-40 md:mb-24">
 
                         <h2 className={`text-center text-4xl pb-16 ${photo.font2}`}>Works</h2>
                         <div className="max-h-[36.25rem] h-96 w-full bg-black rounded-3xl">
@@ -52,10 +52,8 @@ export const Filmmaking = () => {
                     </div>
                 </div>
 <Forms />
-            </div>
-            <div className="md:hidden">
-                <PhotographyMobile />
-            </div>
+            
+            
 
             <div className="max-md:hidden">
                 <Footer />

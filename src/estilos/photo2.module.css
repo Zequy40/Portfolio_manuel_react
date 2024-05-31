@@ -31,9 +31,9 @@
     .loginBox .userBox input {
       width: 100%;
       padding: 10px 0;
-      font-size: 36px;
+      font-size: 1.875rem;
       color: #ffffff;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       border: none;
       border-bottom: 1px solid #ffffff;
       outline: none;
@@ -45,7 +45,7 @@
       top: 0;
       left: 0;
       padding: 10px 0;
-      font-size: 26px;
+      font-size: 1.125rem;
       color: #ffffff;
       pointer-events: none;
       transition: .5s;
@@ -149,4 +149,16 @@
       padding: 1.2rem 0 1.2rem 0;
     }
     
+    }
+    @media screen and (min-width: 768px) {
+      
+      .loginBox {
+        margin:0 5% 0 5%;
+      }
+      .loginBox .userBox input {
+        font-size: 2.25rem;
+      }
+      .loginBox .userBox label {
+        font-size: 1.625rem;
+      }
     }

@@ -11,19 +11,18 @@ export const About = () => {
   return (
     <>
       <Header />
-      <div className="max-md:hidden">
         <div className={about.container}>
-          <div>
+          
             <h1 className={about.title}>Photographer and artist living and working in London, UK.</h1>
-          </div>
+          
           <div className={about.containerImg}>
-            <img src={img1} alt="manuel photo" />
+            <img src={img1} className={about.imgPhoto} alt="manuel photo" />
             <div className={about.containerH2}>
               <h2 className='text-xl'>Manuel Cavilla,London 2023 / BTS Picture</h2>
             </div>
           </div>
           <div className={about.containerP}>
-            <div className='flex flex-row gap-4 '>
+            <div className='md:flex md:flex-row md:gap-4 md:px-0 px-4'>
               <div className='basis-1/2 '>
                 <p className={`text-wrap ${about.p1}`} >
                   <span className='block'>¡Hola!</span>
@@ -37,7 +36,7 @@ export const About = () => {
                   This craft teaches something new everyday and thats why I love it.</p>
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex md:flex-row flex-col px-4 md:px-0'>
             <div className='basis-1/2 '>
               <p className={`${about.p1} ${about.p1M} ${about.p1L}`}>I started my creative career in graphic design which influences my composition techniques. I’ve worked in different projects such as music videos, video advertisements, portrait, weddings, etc.
                 Please, get to know me more by
@@ -64,7 +63,7 @@ export const About = () => {
           </div>
         </div>
         <Forms />
-      </div>
+      
 
       <div className="max-md:hidden">
         <Footer />
