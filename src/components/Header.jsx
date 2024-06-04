@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import contact from './../estilos/contact.module.css';
 import { Link, useHref } from 'react-router-dom';
 import axios from 'axios';
+
+
 export const Header = () => {
     const [menu, setMenu] = useState(false)
     const handleClick = () => {
@@ -83,7 +85,9 @@ export const Header = () => {
       
       <h1 className={contact.title}>{page}</h1>
       <button className={contact.btn} onClick={handleClick}>
-        <img className={contact.icon} alt='' src='/images/icon.png'></img>
+      <svg xmlns="http://www.w3.org/2000/svg" className={contact.icon} fill="currentColor" viewBox="0 0 16 16">
+    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+  </svg>
       </button>
     </div>
     

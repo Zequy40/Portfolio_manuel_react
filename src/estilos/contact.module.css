@@ -128,8 +128,9 @@ gap: 3rem;
 }
 .icon{
     
-    max-width: 9.0625rem;
-    max-height: 9.0625rem;
+    max-width: 5.625rem;
+    max-height: 5.625rem;
+    padding-right: 0.9375rem;
 }
 ----------------------------------------------
 .whiteColor{
