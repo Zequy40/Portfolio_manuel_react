@@ -53,7 +53,7 @@ export const About = () => {
             <div>
             <span className={about.iconBlocH1}>on</span> 
             </div>
-              <div className='flex gap-4 items-center'>
+              <div className='flex md:gap-4 gap-2 items-center'>
               <Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw=="><img className={about.img} alt='' src='/images/insta.png' /></Link>
               <Link to="mailto:info@manuelcavilla.com"><img className={about.img} alt='' src='/images/email.png' /></Link>
               </div>

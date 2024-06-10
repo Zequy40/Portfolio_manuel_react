@@ -178,9 +178,21 @@ padding: 0 ;
         justify-content: center;
         align-items: center;
     }
+    .iconBlocH1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-right: 2rem;
+    }
+    .iconInd{
+        
+        justify-content: center;
+        
+    }
     
     .title{
-       display: none;
+       font-size: 2rem;
+       line-height: 2rem;
+       padding: 1rem;
     }
     .btn{
         display: none;
@@ -279,6 +291,9 @@ padding: 0 ;
         display: block;
         font-size: 18px;
         letter-spacing: 2px;
+    }
+    .img{
+        max-width: 2.5rem;
     }
 }
 @media screen and (min-width: 768px) {
