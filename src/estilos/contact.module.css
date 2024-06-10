@@ -1,6 +1,6 @@
 .container{
     margin: auto;
-    max-width: 79.5rem;
+    max-width: 1272px;
     flex-shrink: 0;
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@
 }
 
 .line{
-    max-width: 1212px;
+    max-width: 1272px;
     height: 1px;
     flex-shrink: 0;
     background-color: #000;

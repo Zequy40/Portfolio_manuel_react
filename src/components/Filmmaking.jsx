@@ -34,7 +34,7 @@ export const Filmmaking = () => {
             <Header />
             
 
-                <div className="max-w-[1212px]  m-auto py-5 mb-10">
+                <div className="max-w-[1272px]  m-auto py-5 mb-10">
                 <div className="w-10 h-36"></div>
                     {/* <div className="transition-all relative w-full max-h-[28.6875rem] py-16">
 

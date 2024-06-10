@@ -85,7 +85,7 @@ useEffect(() => {
 }, []);
   return (
     <>
-      <div className={`${contact.container} ${contact.whiteColor} ${isScrolled ? 'bg-neutral-800/50 text-white' : ''}`}>
+      <div className={`${contact.container} ${contact.whiteColor} ${isScrolled ? 'bg-neutral-800/50 text-white' : 'text-black'}`}>
 
         <div className={contact.header}>
           {product.map(logo => (
@@ -96,7 +96,7 @@ useEffect(() => {
             </div>
           ))}
 
-          <h1 className={`${contact.title} ${isScrolled ? `${contact.title} text-white` : ''}`}>{page}</h1>
+          <h1 className={`${contact.title} ${isScrolled ? `${contact.title} text-white` : 'text-black'}`}>{page}</h1>
           <button className={contact.btn} onClick={handleClick}>
             <svg xmlns="http://www.w3.org/2000/svg" className={contact.icon} fill="currentColor" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
