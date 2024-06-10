@@ -31,13 +31,13 @@ export default function InicioAppMobile() {
             
               <div className={header.containerImgMobile}>
                
-                  <div className="relative w-full"> <img src={folder + logo.backMobile} alt="" className="max-h-40 w-full object-cover"/>
-                  <Link to="/commercial"><button className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-white text-3xl capitalize ${header.font}`}>{logo.descriptionBackMobile}</button></Link></div>
+                  <div className="relative w-full"> <img src={folder + logo.backMobile} alt="" className="max-h-28 w-full object-cover"/>
+                  <Link to="/menu-photography"><button className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-white text-3xl capitalize ${header.font}`}>{logo.descriptionBackMobile}</button></Link></div>
                 
-                  <div className="relative w-full"> <img src={folder + logo.backMobile2} alt="" className="max-h-40 w-full object-cover"/>
+                  <div className="relative w-full"> <img src={folder + logo.backMobile2} alt="" className="max-h-28 w-full object-cover"/>
                   <Link to="/about"><button className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-white text-3xl capitalize ${header.font}`}>{logo.descriptionBackMobile2}</button></Link></div>
                 
-                  <div className="relative w-full"> <img src={folder + logo.backMobile3} alt="" className="max-h-40 w-full object-cover"/>
+                  <div className="relative w-full"> <img src={folder + logo.backMobile3} alt="" className="max-h-28 w-full object-cover"/>
                   <Link to="/filmmaking"><button className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-white text-3xl capitalize ${header.font}`}>{logo.descriptionBackMobile3}</button></Link></div>
                 
               </div>
