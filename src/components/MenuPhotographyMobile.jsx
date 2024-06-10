@@ -19,7 +19,7 @@ export const MenuPhotographyMobile = () => {
                     <div className="w-full py-5 my-10 flex flex-col items-center justify-center text-3xl">
                         <div className="transition-all relative w-full max-h-[215px]">
                         <img src={photo} alt="" className="relative "/>
-                            <Link to="/menu-photography"><button className={`absolute group left-1/2 top-1/2 translate-y-[-50%] translate-x-[-50%] text-white text-3xl ${photography.font}`}>Commercial
+                            <Link to="/commercial"><button className={`absolute group left-1/2 top-1/2 translate-y-[-50%] translate-x-[-50%] text-white text-3xl ${photography.font}`}>Commercial
                             <span className='absolute -bottom-2 left-0 w-0 h-1 bg-white origin-bottom-left transition-all group-hover:w-full '></span></button></Link>
                         </div>
 

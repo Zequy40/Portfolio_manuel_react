@@ -1,4 +1,5 @@
 import { HeaderWhite } from './HeaderWhite';
+import { Header} from './Header';
 import { FooterMobile } from './FooterMobile';
 import { Footer } from './Footer';
 import photography from './../estilos/photo.module.css';
@@ -15,8 +16,10 @@ export const Wedding = () => {
 
     return (
         <>
-            <HeaderWhite />
+            <div className="md:hidden"><Header/></div>
             <div className="max-md:hidden">
+            <HeaderWhite /></div>
+            
                 
 
                 <div className="max-w-[1272px]  m-auto py-5 relative">
@@ -25,8 +28,8 @@ export const Wedding = () => {
 
                     </div>
                 </div>
-            </div>
-            <div className='relative md:mt-[45rem]'>
+            <div className='relative md:mt-[45rem] mt-32'>
+           
                 <h1 className="text-black text-4xl text-center py-10">Packages</h1>
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-x-[100px] max-w-[1272px] mx-auto align-center">
                     <div className={`${photography.font} border border-solid border-black text-center px-6 py-3`}><p className='text-4xl py-3'>Basic Package</p>
