@@ -48,11 +48,25 @@ export const HeaderWhite = () => {
               })
   
       }, []);
-      
+      const [isScrolled, setIsScrolled] = useState(false); 
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > 150) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <>
-    <div className={contact.container} >
+    <div className={`${contact.container} ${isScrolled ? 'bg-neutral-800/50' : ''}`} >
 
     <div className={contact.header}>
     {product.map(logo => (
@@ -75,17 +89,33 @@ export const HeaderWhite = () => {
 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 </svg>
           </button>
-        <div className={contact.nav}>
-          <Link to="/menu-photography" className={
-             page==="Photography" || page==="Photography Menu" ? 'text-red-700' : ''
-          }>Photography</Link>
-          <Link to="/about" className={
-             page==="About me" ? 'text-red-700' : ''
+          <div className={contact.nav}>
+            <ul className=''>
+              <li className={contact.menuItem}>
+                <Link to="/menu-photography" className={
+                  page === "Photography" || page === "Photography Menu" ? 'text-red-700' : ''
+                }>Photography</Link>
+                <ul className={contact.submenu}>
+                  <li><Link to="/commercial" className={
+                    page === "Commercial" ? 'text-red-700 pb-2 pt-4' : 'pb-2 pt-4'
+                  }>Commercial</Link></li>
+                  <li><Link to="/wedding" className={
+                    page === "Wedding" ? 'text-red-700 pb-2' : 'pb-2'
+                  }>Wedding</Link></li>
+                  <li><Link to="/photography-street" className={
+                    page === "Street Photography" ? 'text-red-700 pb-2' : 'pb-2'
+                  }>Street Photography</Link></li>
+                </ul>
+              </li>
+            </ul>
+
+            <Link to="/about" className={
+              page === "About me" ? 'text-red-700' : ''
             }
-          >About me</Link>
-          <Link to="/filmmaking" className={
-            page==="Filmmaking" ? 'text-red-700' : ''
-          }>Filmmaking</Link>
+            >About me</Link>
+            <Link to="/filmmaking" className={
+              page === "Filmmaking" ? 'text-red-700' : ''
+            }>Filmmaking</Link>
           </div>
         </div>
  

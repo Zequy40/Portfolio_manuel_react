@@ -2,7 +2,11 @@
     margin: auto;
     max-width: 79.5rem;
     flex-shrink: 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
 .whiteColor{
     background: white;
@@ -132,6 +136,48 @@ gap: 3rem;
     max-height: 5.625rem;
     padding-right: 0.9375rem;
 }
+.submenu {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-left: 1rem;
+
+    font-size: 25px;
+}
+
+.menuItem {
+    position: relative;
+}
+
+.menuItem:hover .submenu {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s ease;
+}
+
+.submenuItem {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.submenuItem:hover {
+    background-color: #F2F2F2;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
 ----------------------------------------------
 .whiteColor{
     background: transparent;

@@ -68,51 +68,80 @@ export const Header = () => {
               })
   
       }, []);
-      
+     const [isScrolled, setIsScrolled] = useState(false); 
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > 150) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
 
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   return (
     <>
-    <div className={`${contact.container} ${contact.whiteColor}`} >
+      <div className={`${contact.container} ${contact.whiteColor} ${isScrolled ? 'bg-neutral-800/50 text-white' : ''}`}>
 
-    <div className={contact.header}>
-    {product.map(logo => (
-      <div className="logo" key={logo.id}>
-        <Link to="/">
-          <img  className={contact.logo} alt='' src={folder + logo.imageMobile}></img>
-        </Link>
-      </div> 
-      ))}
-      
-      <h1 className={contact.title}>{page}</h1>
-      <button className={contact.btn} onClick={handleClick}>
-      <svg xmlns="http://www.w3.org/2000/svg" className={contact.icon} fill="currentColor" viewBox="0 0 16 16">
-    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-  </svg>
-      </button>
-    </div>
-    
+        <div className={contact.header}>
+          {product.map(logo => (
+            <div className="logo" key={logo.id}>
+              <Link to="/">
+                <img className={contact.logo} alt='' src={`${isScrolled ? `${folder + logo.imageMobileW}` : `${folder + logo.imageMobile}`}`}></img>
+              </Link>
+            </div>
+          ))}
+
+          <h1 className={`${contact.title} ${isScrolled ? `${contact.title} text-white` : ''}`}>{page}</h1>
+          <button className={contact.btn} onClick={handleClick}>
+            <svg xmlns="http://www.w3.org/2000/svg" className={contact.icon} fill="currentColor" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+        </div>
+
         <div className={`${contact.menu} ${menu ? contact.isActive : ''}`}>
           <button className={contact.close} onClick={handleClickOff}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={contact.svg} viewBox="0 0 16 16">
-<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={contact.svg} viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
           </button>
-        <div className={contact.nav}>
-          <Link to="/menu-photography" className={
-             page==="Photography" || page==="Photography Menu" ? 'text-red-700' : ''
-          }>Photography</Link>
-          <Link to="/about" className={
-             page==="About me" ? 'text-red-700' : ''
+          <div className={contact.nav}>
+            <ul className=''>
+              <li className={contact.menuItem}>
+                <Link to="/menu-photography" className={
+                  page === "Photography" || page === "Photography Menu" ? 'text-red-700' : ''
+                }>Photography</Link>
+                <ul className={contact.submenu}>
+                  <li><Link to="/commercial" className={
+                    page === "Commercial" ? 'text-red-700 pb-2 pt-4' : 'pb-2 pt-4'
+                  }>Commercial</Link></li>
+                  <li><Link to="/wedding" className={
+                    page === "Wedding" ? 'text-red-700 pb-2' : 'pb-2'
+                  }>Wedding</Link></li>
+                  <li><Link to="/photography-street" className={
+                    page === "Street Photography" ? 'text-red-700 pb-2' : 'pb-2'
+                  }>Street Photography</Link></li>
+                </ul>
+              </li>
+            </ul>
+
+            <Link to="/about" className={
+              page === "About me" ? 'text-red-700' : ''
             }
-          >About me</Link>
-          <Link to="/filmmaking" className={
-            page==="Filmmaking" ? 'text-red-700' : ''
-          }>Filmmaking</Link>
+            >About me</Link>
+            <Link to="/filmmaking" className={
+              page === "Filmmaking" ? 'text-red-700' : ''
+            }>Filmmaking</Link>
           </div>
         </div>
- 
-    <div className={contact.line}></div>
-  </div>
-</>
+
+        <div className={contact.line}></div>
+      </div>
+    </>
   )
 }

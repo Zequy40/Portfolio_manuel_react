@@ -5,7 +5,7 @@ import photography from './../estilos/photo.module.css';
 import { FormsBlack } from './FormsBlack';
 import { Link } from 'react-router-dom';
 import Find from './CanYouWhite';
-import photo from '/public/images/weddingPort.webp';
+
 
 
 
@@ -21,7 +21,7 @@ export const Wedding = () => {
 
                 <div className="max-w-[1272px]  m-auto py-5 relative">
                     <div className="absolute w-full -top-36 -z-10">
-                        <img src={photo} alt="" className='' />
+                        <img src="/images/weddingPort.webp" alt="" className='' />
 
                     </div>
                 </div>

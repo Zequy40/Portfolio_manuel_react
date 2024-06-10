@@ -45,7 +45,7 @@ export const PhotographyFood = () => {
     <>
       <Header />
       
-
+      <div className="w-10 h-36"></div>
         <div className={photo.container} >
 
 

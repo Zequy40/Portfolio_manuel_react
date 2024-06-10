@@ -11,6 +11,7 @@ export const About = () => {
   return (
     <>
       <Header />
+      <div className="w-10 h-36"></div>
         <div className={about.container}>
           
             <h1 className={about.title}>Photographer and artist living and working in London, UK.</h1>
@@ -18,7 +19,7 @@ export const About = () => {
           <div className={about.containerImg}>
             <img src={img1} className={about.imgPhoto} alt="manuel photo" />
             <div className={about.containerH2}>
-              <h2 className='text-xl'>Manuel Cavilla,London 2023 / BTS Picture</h2>
+              <h2 className={`text-xl ${about.p1}`}>Manuel Cavilla,London 2023 / BTS Picture</h2>
             </div>
           </div>
           <div className={about.containerP}>
@@ -52,7 +53,7 @@ export const About = () => {
             <div>
             <span className={about.iconBlocH1}>on</span> 
             </div>
-              <div className='flex gap-4 items-end'>
+              <div className='flex gap-4 items-center'>
               <Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw=="><img className={about.img} alt='' src='/images/insta.png' /></Link>
               <Link to="mailto:info@manuelcavilla.com"><img className={about.img} alt='' src='/images/email.png' /></Link>
               </div>

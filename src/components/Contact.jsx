@@ -20,9 +20,10 @@ export const Contact = () => {
                 <img alt='' src='/images/email.png' />
               </div><div className={contact.img}>
                 <img alt='' src='/images/insta.png' />
-              </div><div className={contact.img}>
-                <img alt='' src='/images/phone.png' />
               </div>
+              {/* <div className={contact.img}>
+                <img alt='' src='/images/phone.png' />
+              </div> */}
             </div>
             <div className={contact.containerEmail}>
               <div className={contact.email}>
@@ -33,9 +34,9 @@ export const Contact = () => {
                 <div className={contact.emailContact}><Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw==">@manuelcavilla</Link></div>
               </div>
 
-              <div className={contact.email}>
+              {/* <div className={contact.email}>
                 <div className={contact.emailContact}>+44 7300 203398</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -64,13 +65,13 @@ export const Contact = () => {
                   <div className={contact.emailContactMobile}><Link to="https://instagram.com/manuelcavilla?igshid=MjEwN2IyYWYwYw==">@manuelcavilla</Link></div>
                 </div>
 
-                <div className={contact.emailMobile}>
+                {/* <div className={contact.emailMobile}>
                   <div className={contact.imgMobile}>
                     <img alt='' src='/images/phone.png' />
                     <p>Phone</p>
                   </div>
                   <div className={contact.emailContactMobile}><Link to="tel:+44 7300 203398">+44 7300 203398</Link></div>
-                </div>
+                </div> */}
               </div>
 
             </div>

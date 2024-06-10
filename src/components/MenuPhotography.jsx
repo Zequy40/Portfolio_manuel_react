@@ -18,6 +18,7 @@ export const MenuPhotography = () => {
         <>
             <Header />
             <div className="max-md:hidden">
+            <div className="w-10 h-36"></div>
             <div className="max-w-[1212px]  m-auto pb-5">
                     <div className="w-full pb-5 mb-10 flex flex-col items-center justify-center text-3xl">
                         <div className="transition-all relative w-full max-h-[215px]">

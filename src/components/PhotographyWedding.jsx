@@ -36,7 +36,7 @@ export const PhotographyWedding = () => {
 
         <div className={photo.container} >
 
-
+        <div className="w-10 h-36"></div>
           <div className={photo.responsivePhoto} >
             {product.map(foto => (
               <div className={photo.gridItem} key={foto.id}>
