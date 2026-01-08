@@ -8,30 +8,38 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import InicioAppMobile from './components/InicioAppMobile';
 
+import { useEffect, useRef, useState } from "react";
+
 function App() {
   const leftHalfRef = useRef(null);
   const rightHalfRef = useRef(null);
 
-  const [product, setProduct] = useState([])
-  const folder = '/logo/'
+  const folder = "/logo/";
+
+  // Define aquí los pares de imágenes que tienes en /public/logo
+  const localLogos = [
+    {
+      id: 1,
+      image: "logo-1.png",
+      image2: "logo-1-2.png",
+    },
+    // { id: 2, image: "otro.png", image2: "otro-2.png" },
+  ];
+
+  const [product, setProduct] = useState([]);
+
   useEffect(() => {
-    axios.get('https://manuelcavilla.com/apiLogo.php').then(response => {
-      setProduct(response.data);
-    }).catch(error => {
-      console.error('Error al descargar los productos:', error);
-    });
+    setProduct(localLogos);
   }, []);
 
   useEffect(() => {
-    console.log(leftHalfRef.current, rightHalfRef.current)
     if (product.length > 0) {
       const leftHalf = leftHalfRef.current;
       const rightHalf = rightHalfRef.current;
+
       if (leftHalf && rightHalf) {
-        leftHalf.classList.add('translate-x-[0%]');
-        leftHalf.classList.add('duration-[1500ms]');
-        rightHalf.classList.add('translate-x-[0%]');
-        rightHalf.classList.add('duration-[1500ms]');
+        leftHalf.classList.add("translate-x-[0%]", "duration-[1500ms]");
+        rightHalf.classList.add("translate-x-[0%]", "duration-[1500ms]");
       }
     }
   }, [product]);
@@ -40,18 +48,27 @@ function App() {
     <>
       <div className="max-md:hidden py-40">
         <div className={header.container}>
-
           <div className={header.imageContainer}>
-            {product.map(logo => (
+            {product.map((logo) => (
               <div className={header.image} key={logo.id}>
+                <div className={header.leftHalf} ref={leftHalfRef}>
+                  <img
+                    className="py-4"
+                    alt="logo manu"
+                    src={folder + logo.image}
+                  />
+                </div>
 
-                <div className={header.leftHalf} ref={leftHalfRef}><img className='py-4' alt='logo manu' src={folder + logo.image}>
-                </img></div>
-                <div className={header.rightHalf} ref={rightHalfRef}><img className='pb-4' alt='logo manu' src={folder + logo.image2}>
-                </img></div>
+                <div className={header.rightHalf} ref={rightHalfRef}>
+                  <img
+                    className="pb-4"
+                    alt="logo manu"
+                    src={folder + logo.image2}
+                  />
+                </div>
               </div>
+            ))}
 
-            ))}</div>
           <div className={header.line}></div>
 
           <div className={header.groupBtn}>
