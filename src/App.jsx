@@ -5,7 +5,7 @@ import './App.css'
 import header from './estilos/header.module.css';
 
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
 import InicioAppMobile from './components/InicioAppMobile';
 
 import { useEffect, useRef, useState } from "react";
