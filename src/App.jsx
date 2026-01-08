@@ -20,8 +20,8 @@ function App() {
   const localLogos = [
     {
       id: 1,
-      image: "logo-1.png",
-      image2: "logo-1-2.png",
+      image: "mab.svg",
+      image2: "nu.svg",
     },
     // { id: 2, image: "otro.png", image2: "otro-2.png" },
   ];
