@@ -61,7 +61,7 @@ function App() {
                 </div>
               </div>
             ))}
-
+</div>
             <div className={header.line}></div>
 
             <div className={header.groupBtn}>
@@ -88,7 +88,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+     
 
       <div className="md:hidden">
         <InicioAppMobile />
