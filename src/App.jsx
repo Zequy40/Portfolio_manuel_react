@@ -1,14 +1,9 @@
+import { useEffect, useState, useRef } from "react";
+import "./App.css";
 
-import { useEffect, useState, useRef } from 'react';
-import './App.css'
-
-import header from './estilos/header.module.css';
-
-import { Link } from 'react-router-dom';
-
-import InicioAppMobile from './components/InicioAppMobile';
-
-import { useEffect, useRef, useState } from "react";
+import header from "./estilos/header.module.css";
+import { Link } from "react-router-dom";
+import InicioAppMobile from "./components/InicioAppMobile";
 
 function App() {
   const leftHalfRef = useRef(null);
@@ -16,14 +11,12 @@ function App() {
 
   const folder = "/logo/";
 
-  // Define aquí los pares de imágenes que tienes en /public/logo
   const localLogos = [
     {
       id: 1,
       image: "mab.svg",
       image2: "nu.svg",
     },
-    // { id: 2, image: "otro.png", image2: "otro-2.png" },
   ];
 
   const [product, setProduct] = useState([]);
@@ -69,33 +62,40 @@ function App() {
               </div>
             ))}
 
-          <div className={header.line}></div>
+            <div className={header.line}></div>
 
-          <div className={header.groupBtn}>
-            <Link to="/menu-photography"><button className={header.btn3}>Photography
-              <span className={header.effect}></span></button></Link>
-            <Link to="/about"><button className={header.btn1}>About me
+            <div className={header.groupBtn}>
+              <Link to="/menu-photography">
+                <button className={header.btn3}>
+                  Photography
+                  <span className={header.effect}></span>
+                </button>
+              </Link>
 
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button></Link>
+              <Link to="/about">
+                <button className={header.btn1}>
+                  About me
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </Link>
 
-
-            <Link to="/filmmaking"><button className={header.btn2}>Filmmaking</button></Link>
-
-
+              <Link to="/filmmaking">
+                <button className={header.btn2}>Filmmaking</button>
+              </Link>
+            </div>
           </div>
         </div>
-
       </div>
 
       <div className="md:hidden">
         <InicioAppMobile />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
