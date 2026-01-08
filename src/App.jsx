@@ -64,32 +64,39 @@ function App() {
 
             <div className={header.line}></div>
 
-          <div className={header.groupBtn}>
-            <Link to="/menu-photography"><button className={header.btn3}>Photography
-              <span className={header.effect}></span></button></Link>
-            <Link to="/about"><button className={header.btn1}>About me
+            <div className={header.groupBtn}>
+              <Link to="/menu-photography">
+                <button className={header.btn3}>
+                  Photography
+                  <span className={header.effect}></span>
+                </button>
+              </Link>
 
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button></Link>
+              <Link to="/about">
+                <button className={header.btn1}>
+                  About me
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </Link>
 
-
-            <Link to="/filmmaking"><button className={header.btn2}>Filmmaking</button></Link>
-
-
+              <Link to="/filmmaking">
+                <button className={header.btn2}>Filmmaking</button>
+              </Link>
+            </div>
           </div>
         </div>
-
       </div>
 
       <div className="md:hidden">
         <InicioAppMobile />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
 
